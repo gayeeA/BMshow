@@ -1,0 +1,19 @@
+<h1>Showtimes for {{ movie.title }}</h1>
+<table>
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Time</th>
+      <th>Theater</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for show in show_timings %}
+    <tr>
+      <td>{{ show.date }}</td>
+      <td>{{ show.time }}</td>
+      <td>{{ show.theater }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
