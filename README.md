@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # BMshow
 
 BMshow is a web application designed to provide users with information about movies. 
@@ -90,3 +91,6 @@ Please ensure your code adheres to the project's coding standards and includes a
 
 BMshow is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
 
+=======
+# BMshow
+>>>>>>> 347d9a4b47c13a1dbc41d4cc05cb9e70222d34ad
