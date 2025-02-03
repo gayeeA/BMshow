@@ -91,13 +91,16 @@ WSGI_APPLICATION = 'bookmyseat.wsgi.application'
 # }
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': '/tmp/db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'django-BMS',
+        'USER': 'django_bms_user',
+        'PASSWORD': 'AlYDL6gHjLnwDm0TjPquP6jE3EuOGUYl',
+        'HOST': "127.0.0.1",
+        'PORT': "5432",
     }
 }
+DATABASES['default'] = dj_database_url.parse('postgresql://django_bms_user:AlYDL6gHjLnwDm0TjPquP6jE3EuOGUYl@dpg-cugfa8ggph6c73d1qqrg-a.oregon-postgres.render.com/django_bms')
 
-# DATABASES['default'] = dj_database_url.parse('postgresql://django_bookmyshow_user:uF7eu2GnnDbqvUgYswCYpIS5TKTtsAUS@dpg-cshi84o8fa8c739dsme0-a.oregon-postgres.render.com/django_bookmyshow')
-# # 
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
